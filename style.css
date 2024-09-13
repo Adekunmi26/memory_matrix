@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  /* Game Stats Styling */
+  .game-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .timer, .moves {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+  }
+  
+  .card-front {
+    background-image: url('images/card-pattern.jpg');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .card-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  .card.flip .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flip .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  
+  .feedback {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 20px;
+  }
+  

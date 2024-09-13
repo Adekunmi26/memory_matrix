@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Matrix Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Memory Matrix Game</h1>
+  <p>Click on the cards to reveal them and find matching pairs!</p>
+
+  <!-- Game Stats: Timer and Moves -->
+  <div class="game-stats">
+    <div class="timer">
+      Time Elapsed: <span id="time">00:00</span>
+    </div>
+    <div class="moves">
+      Moves: <span id="moveCount">0</span>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <div class="card" data-name="animal1">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <img src="images/cute.jpeg" alt="Animal 1">
+      </div>
+    </div>
+    <div class="card" data-name="animal1">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <img src="images/cute1.jpeg" alt="Animal 1">
+      </div>
+    </div>
+    <div class="card" data-name="animal2">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <img src="images/happy.jpeg" alt="Animal 2">
+      </div>
+    </div>
+    <div class="card" data-name="animal2">
+      <div class="card-front"></div>
+      <div class="card-back">
+        <img src="images/happy1.jpeg" alt="Animal 2">
+      </div>
+    </div>
+    <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/hott.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/hott1.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/nerdy.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/nerdy1.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/sad.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/sad1.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/thinking1.jpeg" alt="Animal 2">
+        </div>
+      </div>
+      <div class="card" data-name="animal2">
+        <div class="card-front"></div>
+        <div class="card-back">
+          <img src="images/thinking1.jpeg" alt="Animal 2">
+        </div>
+      </div>
+  </div>
+
+  <div id="feedback" class="feedback"></div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
